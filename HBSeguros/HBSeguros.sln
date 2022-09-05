@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSeguros", "HBSeguros\HBSeguros.csproj", "{0F48E35B-D3BF-484C-8C75-5EC58756615E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HBSeguros", "HBSeguros\HBSeguros.csproj", "{0F48E35B-D3BF-484C-8C75-5EC58756615E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontHBSeguros", "FrontHBSeguros\FrontHBSeguros.csproj", "{7735FA08-A4F3-4EA3-BB2B-C56B53CE7941}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0F48E35B-D3BF-484C-8C75-5EC58756615E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F48E35B-D3BF-484C-8C75-5EC58756615E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F48E35B-D3BF-484C-8C75-5EC58756615E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7735FA08-A4F3-4EA3-BB2B-C56B53CE7941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7735FA08-A4F3-4EA3-BB2B-C56B53CE7941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7735FA08-A4F3-4EA3-BB2B-C56B53CE7941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7735FA08-A4F3-4EA3-BB2B-C56B53CE7941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
