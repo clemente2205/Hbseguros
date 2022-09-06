@@ -6,5 +6,7 @@ CREATE TABLE tblUsuarios(
 	Edad INT,
 	TipoUsuario INT,
 	Imagen VARBINARY(MAX),
-	Correo VARCHAR(50)
+	Correo VARCHAR(50),
+	NombreUsuario VARCHAR(30) UNIQUE,
+	Contrasena VARCHAR(30),
 );
