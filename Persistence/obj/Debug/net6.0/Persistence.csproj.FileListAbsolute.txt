@@ -1,0 +1,15 @@
+C:\Projects\Hbseguros\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\Projects\Hbseguros\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\Projects\Hbseguros\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\Projects\Hbseguros\Persistence\bin\Debug\net6.0\Domain.dll
+C:\Projects\Hbseguros\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\Projects\Hbseguros\Persistence\obj\Debug\net6.0\ref\Persistence.dll

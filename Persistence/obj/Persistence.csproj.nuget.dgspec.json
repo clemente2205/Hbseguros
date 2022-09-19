@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Hbseguros\\Persistence\\Persistence.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Hbseguros\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Hbseguros\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Projects\\Hbseguros\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\peprg\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Hbseguros\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\peprg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\common-nuget-packages\\Setup\\UplaySetup\\UplaySetup\\Uplay": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/268d0bef-f103-4cd8-b0ce-8e648ec9e2f7/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/CWL_NugetPackages%40Prerelease/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/CWL_NugetPackages%40Release/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Hbseguros\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Hbseguros\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Projects\\Hbseguros\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\peprg\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Hbseguros\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\peprg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Projects\\common-nuget-packages\\Setup\\UplaySetup\\UplaySetup\\Uplay": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/268d0bef-f103-4cd8-b0ce-8e648ec9e2f7/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/CWL_NugetPackages%40Prerelease/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/AMDCS/bcde6d7e-4af1-4cf1-8584-ce800a7883ce/_packaging/CWL_NugetPackages%40Release/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Hbseguros\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Projects\\Hbseguros\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

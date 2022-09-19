@@ -1,0 +1,9 @@
+commands
+
+.net core
+-correr el proyecto de net core en Visual studio code
+abrir la terminal
+ir a la carpeta de API y correr "dotnet run" pero es mejor correr "dotnet watch run" para estar viendo que pasa todo momento
+
+react
+-ir a la carpeta de client-hbseguros y correr el comando npm-start
