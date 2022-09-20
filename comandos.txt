@@ -5,5 +5,16 @@ commands
 abrir la terminal
 ir a la carpeta de API y correr "dotnet run" pero es mejor correr "dotnet watch run" para estar viendo que pasa todo momento
 
+https://www.nuget.org/packages/dotnet-ef
+
+iniciar migracion                           alojamiento     proyecto inicio
+dotnet ef migrations add InitialCreate -p .\Persistence -s .\API
+
+undo
+ef migrations remove
+
+crear base de datos segun el modelo
+dotnet ef database update -p .\API
+
 react
 -ir a la carpeta de client-hbseguros y correr el comando npm-start

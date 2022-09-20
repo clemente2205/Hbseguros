@@ -1,3 +1,9 @@
+using Persistence;
+using Microsoft.EntityFrameworkCore;
+using MediatR;
+using System;
+using Application.Activities;
+
 var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,14 +17,25 @@ builder.Services.AddCors(options =>
                       });
 });
 
-// Add services to the container.
+builder.Services.AddDbContext<DataContext>(async opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
+builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+
+// Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//using var scope = app.Services.CreateScope();
+//DataContext context = scope.ServiceProvider.GetRequiredService<DataContext>();
+//context.Database.Migrate();
+//await Seed.SeedData(context);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

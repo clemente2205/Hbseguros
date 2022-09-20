@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DiRo3u2Erq8R/jY53mau+YMLPtAfKyfcvCOwhVQegtR0KVXMEU0NWRMyYy4clyOh4GVWUNfIuqMcoZX42JQ6Gw==",
+  "dgSpecHash": "nA/gjRJGK/9ChELaAt09QbSoPj2BhOAEYKpw33xsOjBiBBmjxuAZsMQA+Txns22Qj3XnZXLII2nFi6M58zk4bg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Hbseguros\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\peprg\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\peprg\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\peprg\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\peprg\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\peprg\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\peprg\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
