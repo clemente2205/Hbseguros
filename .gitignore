@@ -9,3 +9,7 @@
 /.vs
 /API/bin
 /API/obj
+/Application/bin
+/Application/obj
+/Persistence/bin
+/Persistence/obj
