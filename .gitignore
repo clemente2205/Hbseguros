@@ -8,3 +8,4 @@
 *.v2
 /.vs
 /API/bin
+/API/obj
