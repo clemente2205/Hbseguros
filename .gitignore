@@ -4,5 +4,5 @@
 /FHBSeguros/FHBSeguros/obj
 /BHBSeguros/BHBSeguros/bin
 /BHBSeguros/BHBSeguros/obj
-.vs/
+*.vs/
 *.v2
