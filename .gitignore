@@ -1,4 +1,6 @@
 /HBSeguros/HBSeguros/bin
+.vs
+.vscode
 /HBSeguros/HBSeguros/obj
 /FHBSeguros/FHBSeguros/bin
 /FHBSeguros/FHBSeguros/obj
