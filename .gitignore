@@ -7,3 +7,4 @@
 *.vs/
 *.v2
 /.vs
+/API/bin
