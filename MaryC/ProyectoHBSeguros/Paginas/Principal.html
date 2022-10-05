@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Seguros Algo más que un seguro</title>
+    <link rel="icon" href="../Imagenes/icono.ico"></img>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a7f2b2e2a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+ 
+
+
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap;">
+    <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap;">
+    <link rel="stylesheet" href="../Estilos/Style.css">
+    <link rel="stylesheet" href="../Estilos/Principal.css">
+
+    <script>
+  
+  $(document).ready(function() {
+    console.log(localStorage.getItem("nombre") + "  * ** * * ** ");
+      var user = localStorage.getItem("nombre") ;
+      $("#bienvenido").text("Bienvenido(a) " +  user);
+   });
+
+
+    </script>
+</head>
+
+<body>
+ 
+<!–– -------------------------------- ––>
+    <div class="contenedorPrincipal">
+      <img id="imagenFondo" src="../Imagenes/HB_Seguros.jpg">
+        <!–– Menu Principal ––>
+        <div class="form-encabezado">
+            <div class="all">
+              <div class="lefter2" onclick="MenuCatalogos()">
+                <div class="textMenu">Catálogos</div>
+            </div>
+                <div class="lefter1" onclick="MenuDashboard()">
+                    <div class="textMenu">Dashboard</div>
+                </div>
+                <div class="lefter" onclick="MenuCartera()">
+                    <div class="textMenu">Cartera</div>
+                </div>
+                <div class="left" onclick="MenuSeguimiento()">
+                    <div class="textMenu">Seguimiento</div>
+                </div>
+                <div class="center" onclick="MenuCotizador()">
+                    <div class="explainer"><span id="bienvenido"></span></div>
+                    <div class="textMenu">Cotizador</div>
+                </div>
+                <div class="right" onclick="MenuPolizas()">
+                    <div class="textMenu">Pólizas</div>
+                </div>
+                <div class="righter" onclick="MenuCobranza()">
+                    <div class="textMenu">Cobranza</div>
+                </div>
+                <div class="righter1" onclick="MenuNotificaciones()">
+                    <div class="textMenu" >Notificaciones</div>
+                </div>
+                <div class="righter2" onclick="Salir()">
+                  <div class="textMenu">Salir</div>
+                </div>
+            </div>
+
+        </div>
+        <!––--------------------------------------------------------------- ––>
+
+        <!–– Menu Cotizador ––>
+        <div id="menuCotizador" class="menuCotizador">
+            <div class="menu-lateral">
+                <div class="menu-vehiculos">
+                    <div class="">
+                        <div id="navMenuVehiculos" class="navMenuVehiculos navMenu diamond" title="Vehículos" >
+                            <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-car fa-2x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div id="nav1" class="nav nav1 diamond small" id="menuAutomovil" onclick="FormularioAutomoviles()" title="Automóviles">
+                            <div class="rotCorrect"><i class="fa fa-car-side fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div id="nav2" class="nav nav2 diamond small" id="menuMotocileta" title="Motocicletas">
+                            <div class="rotCorrect"><i class="fa fa-motorcycle fa-2x" aria-hidden="true" onclick="FormularioMotocicletas()"></i></div>
+                        </div>
+                        <div id="nav3" class="nav nav3 diamond small">
+                            <div class="rotCorrect"><i class="fa fa-truck-pickup fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div id="nav4" class="nav nav4 diamond small">
+                            <div class="rotCorrect"><i class="fa fa-truck fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div id="nav5" class="nav nav5 diamond small">
+                            <div class="rotCorrect"><i class="fa fa-truck-front fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div id="nav6" class="nav nav6 diamond small">
+                            <div class="rotCorrect"><i class="fa fa-solid fa-truck-moving fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                        <div id="nav7" class="nav nav7 diamond small">
+                            <div class="rotCorrect"><i class="fa fa-solid fa-truck-field fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-SafeTrans">
+                    <div id="navMenuSafeTrans" class="navMenu diamond">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-solid fa-truck fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-viajes">
+                    <div id="navMenuViajes" class="navMenu diamond">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-plane-departure fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-maquinaria">
+                    <div id="navMenuMaquinaria" class="navMenu  diamond">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-solid fa-tractor fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-asi">
+                    <div id="navMenuAsi" class="navMenu  diamond ">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-solid fa-person fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-gastosMedicos">
+                    <div id="navMenuGastosMedicos" class="navMenu  diamond">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-solid fa-truck-medical fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div id="nav8" class="navM nav8 diamond smallM">
+                        <div class="rotCorrect"><i class="fa fa-solid fa-house-medical fa-2x" aria-hidden="true"></i></div>
+                    </div>
+                    <div id="nav9" class="navM nav9 diamond smallM">
+                        <div class="rotCorrect"><i class="fa fa-solid fa-briefcase-medical fa-2x" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="menu-Slip">
+                    <div id="navMenuSlip" class="navMenu  diamond">
+                        <div id="mainRotCorrect" class="rotCorrect"><i class="fa fa-solid fa-cubes-stacked fa-2x" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!––--------------------------------------------------------------- ––>
+
+        <!–– Formulario Automoviles ––>
+        <div id="FomularioVehiculos">
+            <div id="DatosCotizacion" class="DatosCotizacion">
+                <div class="TituloMenu">
+                    <h1 id="tituloMenu">Automóviles</h1>
+                    
+                </div>
+                <div class="datosAsegurado row">
+                    <h3>Datos del asegurado</h3>
+                    <hr>
+                    <div class="asegurado">
+                      <div class="columna-33">
+                        <label for="tipoPersona">Tipo de persona:</label>
+                        <select id="tipoPersona" class="selectpicker" data-style="btn-primary">
+                          <option value ="0">Seleccione una opcion</option>        
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="sexo" class="">Género:</label>
+                        <select id="sexo" class="selectpicker" data-style="btn-primary">
+                          <option value ="0">Seleccione una opcion</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="edadAsegurado">Edad:</label>
+                        <select id="edadAsegurado" class="selectpicker" data-style="btn-primary">
+                            <option value ="0">Seleccione una opcion</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="codigoPostal">Código Postal:</label>
+                        <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal" maxlength="5"></input>
+                      </div>
+                    </div>
+                </div>
+                <div class="datosVehiculo row">
+                    <h3>Datos del automóvil</h3>
+                    <hr>
+                    <div class="vehiculo">
+                      <div class="columna-33">
+                        <label for="modelo">Modelo:</label>
+                        <select id="modeloAnoAuto" class="selectpicker" data-style="btn-primary">
+                            <option>Seleccione una opcion</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="marca" class="">Marca:</label>
+                        <select id="marca" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Acuri</option>
+                          <option>Audi</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="version">Versión:</label>
+                        <select id="version" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>X</option>
+                          <option>Y</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="transmision">Transmisión:</label>
+                        <select id="transmision" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Automatica</option>
+                          <option>Manual</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="descripcion">Descripción:</label>
+                        <select id="descripcion" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Advance</option>
+                          <option>Especial</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="valorFactura">Valor Factura:</label>
+                        <input class="form-control" id="ValorFactura" placeholder="Valor Factura"></input>
+                      </div>
+                    </div>
+                </div>
+                <div class="datosSeguro row">
+                    <h3>Datos del seguro</h3>
+                    <hr>
+                    <div class="seguro">
+                      <div class="columna-33">
+                        <label for="tipoCobertura">Tipo Cobertura:</label>
+                        <select id="tipoCobertura" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option value="1">Amplia</option>
+                          <option value="2">Limitada</option>
+                          <option value="3">RC</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+                <div id="DatosCoberturas"  class="row">
+                    <div id="coberturas">
+                        <div id="divDeducibleDanosMateriales" class="columna-33">
+                            <label for="DeducibleDanosMateriales">Daños materiales:</label>
+                            <select id="DeducibleDanosMateriales" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divDeducibleRoboTotal"class="columna-33">
+                            <label for="DeducibleRoboTotal">Robo total:</label>
+                            <select id="DeducibleRoboTotal" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divGastosmedicosocupantes" class="columna-33">
+                            <label for="Gastosmedicosocupantes">Gastos médicos ocupantes:</label>
+                            <select id="Gastosmedicosocupantes" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divResponsabilidadcivildanosterceros" class="columna-33">
+                            <label for="Responsabilidadcivildanosterceros">Responsabilidad civil:</label>
+                            <select id="Responsabilidadcivildanosterceros" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divAutoAgencia" class="columna-33">
+                            <label for="AutoAgencia">Auto en agencia:</label>
+                            <select id="AutoAgencia" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id ="divAutoSustituto" class="columna-33">
+                            <label for="AutoSustituto">Auto sutituto:</label>
+                            <select id="AutoSustituto" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divEliminacionDeduciblePerdidaTotalRobo" class="columna-33">
+                            <label for="EliminacionDeduciblePerdidaTotalRobo">Eliminación de deducible robo:</label>
+                            <select id="EliminacionDeduciblePerdidaTotalRobo" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divEliminacionDeduciblePerdidaTotalDanos" class="columna-35">
+                            <label for="EliminacionDeduciblePerdidaTotalDanos">Eliminación de deducible daños:</label>
+                            <select id="EliminacionDeduciblePerdidaTotalDanos" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id = "DivRinesLLantas" class="columna-33">
+                            <label for="RinesLLantas">Rines y llantas:</label>
+                            <select id="RinesLLantas" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divAccidentesAutomovilisticosConductor" class="columna-35">
+                            <label for="AccidentesAutomovilisticosConductor">Acc. automovilísticos al conductor:</label>
+                            <select id="AccidentesAutomovilisticosConductor" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divEquipoEspecial" class="columna-33">
+                            <label for="EquipoEspecial">Equipo especial:</label>
+                            <select id="EquipoEspecial" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divRoboParcial" class="columna-33">
+                            <label for="RoboParcial">Robo parcial:</label>
+                            <select id="RoboParcial" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divResponsabilidadCivilCompPersonas" class="columna-35">
+                            <label for="ResponsabilidadCivilCompPersonas">Respons. civil complementaria personas:</label>
+                            <select id="ResponsabilidadCivilCompPersonas" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                        <div id="divExtensionRC" class="columna-33">
+                          <label for="ExtensionRC">Extensión de RC:</label>
+                          <select id="ExtensionRC" class="selectpicker" data-style="btn-primary">
+                            <option>Seleccione una opcion</option>
+                            <option>Amplia</option>
+                            <option>Limitada</option>
+                            <option>RC</option>
+                          </select>
+                      </div>
+                        <div id="divCADE" class="columna-33">
+                            <label for="CADE">CADE:</label>
+                            <select id="CADE" class="selectpicker" data-style="btn-primary">
+                              <option>Seleccione una opcion</option>
+                              <option>Amplia</option>
+                              <option>Limitada</option>
+                              <option>RC</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr>
+                <!––--------------------------------------------------------------- ––>
+            </div>
+        </div>
+        <!––--------------------------------------------------------------- ––>
+        <!–– Formulario Motocicletas ––>
+        <div id="FomularioMotocicletas">
+            <div id="DatosCotizacion" class="DatosCotizacion">
+                <div class="TituloMenu">
+                    <h1 id="tituloMenu">Motocicletas</h1>
+                  
+                </div>
+                <div class="datosAsegurado row">
+                    <h3>Datos del asegurado</h3>
+                    <hr>
+                    <div class="asegurado">
+                      <div class="columna-33">
+                        <label for="tipoPersona">Tipo de persona:</label>
+                        <select id="tipoPersona" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Fisica</option>
+                          <option>Moral</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="sexo" class="">Género:</label>
+                        <select id="sexo" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Masculino</option>
+                          <option>Femenino</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="edad">Edad:</label>
+                        <select id="edad" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="codigoPostal">Código Postal:</label>
+                        <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal"></input>
+                      </div>
+                    </div>
+                </div>
+                <div class="datosVehiculo row">
+                    <h3>Datos del vehículo</h3>
+                    <hr>
+                    <div class="vehiculo">
+                      <div class="columna-33">
+                        <label for="modelo">Modelo:</label>
+                        <select id="modeloAnoMoto" class="selectpicker" data-style="btn-primary">      
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="marca" class="">Marca:</label>
+                        <select id="marca" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Acuri</option>
+                          <option>Audi</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="version">Versión:</label>
+                        <select id="version" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>X</option>
+                          <option>Y</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="transmision">Transmisión:</label>
+                        <select id="transmision" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Automatica</option>
+                          <option>Manual</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="descripcion">Descripción:</label>
+                        <select id="descripcion" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Advance</option>
+                          <option>Especial</option>
+                        </select>
+                      </div>
+                      <div class="columna-33">
+                        <label for="valorFactura">Valor Factura:</label>
+                        <input class="form-control" id="ValorFactura" placeholder="Valor Factura"></input>
+                      </div>
+                    </div>
+                </div>
+                <div class="datosSeguro row">
+                    <h3>Datos del seguro</h3>
+                    <hr>
+                    <div class="seguro">
+                      <div class="columna-33">
+                        <label for="tipoCobertura">Tipo Cobertura:</label>
+                        <select id="tipoCobertura" class="selectpicker" data-style="btn-primary">
+                          <option>Seleccione una opcion</option>
+                          <option>Amplia</option>
+                          <option>Limitada</option>
+                          <option>RC</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!––--------------------------------------------------------------- ––>
+
+        <!––--------------------------------------------------------------- ––>
+      
+       </div>   
+    <script src="../Javascript/Script.js"></script>
+    <script type="text/javascript" src="../Javascript/Principal.js"></script> 
+</body>
+
+</html>

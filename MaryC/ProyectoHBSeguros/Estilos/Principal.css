@@ -1,0 +1,441 @@
+
+.form-encabezado {
+  background: #333;
+  color: white;
+  height: 100px;
+
+}
+
+.all {
+  padding-top: 8px;
+  display: flex;
+  perspective: 10px;
+  transform: perspective(300px) rotateX(20deg);
+  will-change: perspective;
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.all:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+}
+
+.all:hover .textMenu {
+  opacity: 1;
+}
+
+.all:hover>div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.all:hover .explainer {
+  opacity: 0;
+}
+
+.lefter2,
+.lefter1,
+.left,
+.center,
+.right,
+.lefter,
+.righter,
+.righter1,
+.righter2 {
+  width: 100px;
+  height: 70px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  /*border: 1px solid #fff;*/
+  box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #58d;
+  cursor: pointer;
+  background-blend-mode: color-burn;
+}
+
+.lefter2:hover,
+.lefter1:hover,
+.left:hover,
+.center:hover,
+.right:hover,
+.lefter:hover,
+.righter:hover,
+.righter1:hover,
+.righter2:hover {
+  box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
+  background-color: #ccf;
+}
+
+.textMenu {
+  transform: translateY(23px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  bottom: 0;
+  left: 15px;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+}
+
+.lefter2 {
+  transform: translateX(-120px) translateZ(-100px) rotateY(-5deg);
+  background-image: url(../Imagenes/catalogos.png);
+}
+
+.lefter1 {
+  transform: translateX(-90px) translateZ(-75px) rotateY(-5deg);
+  background-image: url(../Imagenes/dashboard.png);
+  /*url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);*/
+}
+
+
+.lefter {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-5deg);
+  background-image: url(../Imagenes/usuario.png);
+  /*url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);*/
+}
+
+.left {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+  background-image: url(../Imagenes/seguimiento.png);
+  /*url(https://cdn3.iconfinder.com/data/icons/other-icons/48/creative_draw-512.png);*/
+}
+
+.center {
+  opacity: 1;
+  background-image:url(../Imagenes/cotizador.png);
+  /* url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);*/
+}
+
+.right {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+  background-image: url(../Imagenes/polizas.png);
+  /*url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);*/
+}
+
+.righter {
+  transform: translateX(60px) translateZ(-50px) rotateY(5deg);
+  background-image: url(../Imagenes/cobranza_.png);
+  /*url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);*/
+}
+
+.righter1 {
+  transform: translateX(90px) translateZ(-75px) rotateY(5deg);
+  background-image: url(../Imagenes/email.png);
+}
+
+.righter2 {
+  transform: translateX(120px) translateZ(-100px) rotateY(5deg);
+  background-image: url(../Imagenes/salir.png);
+}
+
+.explainer {
+  font-weight: 300;
+  font-size: 2.25rem;
+  color: #fff;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(circle at center top, #cce, #33a);
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+
+#bienvenido
+{text-align: center}
+/***/
+.menu-lateral {
+  margin-left: 80px;
+  margin-top: 60px;
+  background-color: #a11b1b;
+}
+
+.navMenu {
+
+  z-index: 100;
+  background: linear-gradient(90deg, #1534c1, #1534c1, #1534c1);
+  -webkit-background: linear-gradient(90deg, #1534c1, #1534c1, #1534c1);
+  background-size: 400% 400%;
+  -webkit-background-size: 400% 400%;
+  animation: gradient 5s infinite;
+  -webkit-animation: gradient 5s infinite;
+}
+
+#navMenuVehiculos,
+#navMenuSafeTrans,
+#navMenuViajes,
+#navMenuMaquinaria,
+#navMenuAsi,
+#navMenuGastosMedicos,
+#navMenuSlip {
+  width: 60.5px;
+  height: 60.5px;
+}
+
+#navMenuVehiculos {
+  background: linear-gradient(90deg, #854d2f, #854d2f, #854d2f);
+  -webkit-background: linear-gradient(90deg, #854d2f, #854d2f, #854d2f);
+}
+
+#navMenuVehiculos:hover {
+  background: #e2911f;
+}
+
+#navMenuSafeTrans {
+  margin-top: 110px;
+  background: linear-gradient(90deg, #4b9ab0, #4b9ab0, #4b9ab0);
+  -webkit-background: linear-gradient(90deg, #4b9ab0, #4b9ab0, #4b9ab0);
+}
+
+#navMenuSafeTrans:hover {
+  background: #1d5a5f;
+}
+
+#navMenuViajes {
+  margin-top: 220px;
+  background: linear-gradient(90deg, #499455, #499455, #499455);
+  -webkit-background: linear-gradient(90deg, #499455, #499455, #499455);
+}
+
+#navMenuViajes:hover {
+  background: #265a23;
+}
+
+#navMenuMaquinaria {
+  margin-top: 330px;
+  background: linear-gradient(90deg, #2233ac, #2233ac, #2233ac);
+  -webkit-background: linear-gradient(90deg, #2233ac, #2233ac, #2233ac);
+}
+
+#navMenuMaquinaria:hover {
+  background: #3d51a0;
+}
+
+#navMenuAsi {
+  margin-top: 440px;
+  background: linear-gradient(90deg, #b53742, #b53742, #b53742);
+  -webkit-background: linear-gradient(90deg, #b53742, #b53742, #b53742);
+}
+
+#navMenuAsi:hover {
+  background: #960b0b;
+}
+
+#navMenuGastosMedicos {
+  margin-top: 550px;
+  background: linear-gradient(90deg, #c4c430, #c4c430, #c4c430);
+  -webkit-background: linear-gradient(90deg, #c4c430, #c4c430, #c4c430);
+}
+
+#navMenuGastosMedicos:hover {
+  background: #bfdc19;
+}
+
+#navMenuSlip {
+  margin-top: 660px;
+  background: linear-gradient(90deg, #91179a, #91179a, #91179a);
+  -webkit-background: linear-gradient(90deg, #91179a, #91179a, #91179a);
+}
+
+#navMenuSlip:hover {
+  background: #f60227a8;
+}
+
+#navMenuAsi #mainRotCorrect {
+  margin-left: 20px;
+}
+
+#navMenuSlip #mainRotCorrect {
+  margin-left: 15px;
+}
+
+.navMenu:hover,
+.nav:hover {
+  background: #e2911f;
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+.diamond {
+  position: absolute;
+  width: 45.5px;
+  height: 45.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background: #717f80;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 1px 4px 10px #101010;
+}
+
+.diamond:active {
+  background: #1e6175;
+  box-shadow: 0px 1px 2.5px #101010;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+}
+
+.nav,
+.navM {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.nav1 {
+  margin-top: -59px;
+  margin-left: 19px;
+}
+
+.nav2 {
+  margin-top: -22px;
+  margin-left: 61px;
+}
+
+.nav3 {
+  margin-top: 18px;
+  margin-left: 101px;
+}
+
+.nav4 {
+  margin-top: 56px;
+  margin-left: 63px;
+}
+
+.nav5 {
+  margin-top: 60px;
+  margin-left: -27px;
+}
+
+.nav6 {
+  margin-top: 15px;
+  margin-left: -61px;
+}
+
+.nav7 {
+  margin-top: -25px;
+  margin-left: -24px
+}
+
+.nav8 {
+  margin-top: 520px;
+  margin-left: 67px;
+}
+
+.nav9 {
+  margin-top: 600px;
+  margin-left: 66px;
+}
+
+.small {
+  margin-top: 16px;
+  margin-left: 19px;
+  z-index: 10;
+  background: #717f80;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.smallM {
+  margin-top: 554px;
+  margin-left: 24px;
+  z-index: 10;
+  background: #206f75;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.rotCorrect {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+#mainRotCorrect {
+  margin-left: 10px;
+  margin-top: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  max-width: 90px;
+}
+
+i {
+  color: #EEEEEE;
+}
+
+.fa-2x {
+  font-size: 1.7em;
+}
+
+.columna-33 {
+  float: left;
+  width: 20%;
+  margin: 15px;
+  text-align: center;
+}
+
+.columna-35 {
+  float: left;
+  width: 20%;
+  margin: -5px 15px 15px 15px;
+  text-align: center;
+}
+
+/******/
+.menuCotizador {
+  width: 20%;
+  min-width: 250px;
+  height: 900px;
+  float: left;
+  display: none;
+}
+
+#FomularioVehiculos,
+#FomularioMotocicletas {
+  width: 75%;
+  float: right;
+  /*background-color: white;*/
+}
+
+#FomularioVehiculos,
+#FomularioMotocicletas {
+  display: none;
+}
+
+#tituloMenu {
+  justify-content: center;
+  display: flex;
+  color: brown;
+}
+
+#FomularioVehiculos hr,
+#FomularioMotocicletas hr {
+  border-top: 1px solid #c23d3d;
+}
