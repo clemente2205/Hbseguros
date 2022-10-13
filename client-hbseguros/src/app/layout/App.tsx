@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Header, List } from 'semantic-ui-react';
 import agent from '../api/agent';
+import './Login.css';
 
 function App() {
   const [activities, setActivities] = useState([]);
@@ -13,20 +12,18 @@ function App() {
   }, [])
 
   return (
-    <div>
-      <Header as='h2' icon='user' content='Reactivities'/>
-      <List>
-          {activities && activities.map((activity: any) => (
-            <List.Item key={activity.id}>
-              {activity.title}
-              {activity.date}
-              {activity.description}
-              {activity.category}
-              {activity.city}
-              {activity.venue}
-            </List.Item>
-          ))}
-        </List>
+    <div className='principalLogin'>
+      <div className='form-body'>
+        <img src={require('./Imagenes/HB_Seguros.jpg')}></img>
+        <div className="login-form">
+          <div>
+            <input id='idUsuario' type='text' placeholder='Usuario'></input>
+          </div>
+          <div>
+            <input id='contrasenaUsuario' type='password' placeholder='Contraseña'></input>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
