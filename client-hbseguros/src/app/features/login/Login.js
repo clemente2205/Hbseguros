@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import agent from '../../api/agent';
 import './Login.css';
-//import loginStyles from './Login.module.sass';
 import loginStyles from './Login.module.scss';
 
-function App() {
+function Login() {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
@@ -32,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
