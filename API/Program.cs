@@ -49,12 +49,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddIdentityServices(builder.Configuration);
 var app = builder.Build();
 
-using var scope = app.Services.CreateScope();
-DataContext context = scope.ServiceProvider.GetRequiredService<DataContext>();
-var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-context.Database.ExecuteSqlRaw("exec spDeleteAll");
-context.Database.Migrate();
-await Seed.SeedData(context, userManager);
+//using var scope = app.Services.CreateScope();
+//DataContext context = scope.ServiceProvider.GetRequiredService<DataContext>();
+//var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+//context.Database.ExecuteSqlRaw("exec spDeleteAll");
+//context.Database.Migrate();
+//await Seed.SeedData(context, userManager);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
