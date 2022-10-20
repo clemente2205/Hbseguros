@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import agent from '../../api/agent';
-import './Login.css';
 import loginStyles from './Login.module.scss';
 
 function Login() {
@@ -16,7 +15,7 @@ function Login() {
   return (
     <div className={loginStyles.principalLogin}>
       <div className={loginStyles.formBody}>
-        <img src={require('../Imagenes/HB_Seguros.jpg')}></img>
+        <img src={require('../../layout/Imagenes/HB_Seguros.jpg')}></img>
         <div className="login-form">
           <div>
             <input id='idUsuario' type='text' placeholder='Usuario'/><li className="fa fa-user"></li>

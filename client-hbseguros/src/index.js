@@ -5,11 +5,14 @@ import HomePage from './app/features/home/HomePage';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './app/features/navbar/NavBar';
 import { BrowserRoute } from 'react-router-dom';
+import Login from './app/features/login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <NavBar/>
-   // <Login/>
+  <Login/>
+  /*<NavBar>
+   <HomePage/>
+  </NavBar>*/
 );
 
 // If you want to start measuring performance in your app, pass a function
